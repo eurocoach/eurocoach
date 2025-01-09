@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eurocoach - Reserva tu Cita</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .calendar-container {
+            position: relative;
+            padding-bottom: 75%;
+            height: 0;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .calendar-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .description {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .description h2 {
+            font-size: 2em;
+            color: #003366;
+        }
+
+        .description p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .description h2 {
+                font-size: 1.5em;
+            }
+
+            .description p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Eurocoach</h1>
+    </header>
+
+    <div class="container">
+        <div class="description">
+            <h2>Reserva tu Cita</h2>
+            <p>Selecciona una fecha y hora conveniente para tu sesión de coaching. Estamos aquí para ayudarte a alcanzar tus metas.</p>
+        </div>
+
+        <div class="calendar-container">
+            <iframe src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3mfjofNOxF0fxcUf-vYYI11DeJDYwb_mbzBlQLAej0MGfjBVR9P4fGx2reW6k9sPjndG0biuMz" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Eurocoach. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
